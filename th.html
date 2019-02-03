@@ -1,0 +1,222 @@
+<html>
+    <head>
+          <title>html tag</title>
+  <style>
+
+.test {
+  width:60%;
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+}
+.bg{
+         background-image:url("y.jpg");
+          height:100vh;
+          background-size:cover;
+          background-position:center;
+         }
+
+ *{
+            margin:0;
+            
+            font-family:Century Gothic;
+           }
+
+       ul{
+          float:right;
+          list-style-type:none;
+          margin-top:25px
+          }
+
+      ul li{
+          display:inline-block;
+           }
+       ul li a{
+           text-decoration:none;
+           color:#f44242;
+           padding:5px 20px;
+           border 1px solid #fff;
+           transition:0.6s ease;
+
+            }
+ul li a:hover{
+            background-color:#fff;
+            color:#000;
+            }
+.btn, .btn:link, .btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}   
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}                 
+       
+
+  </style>
+    </head>
+  <body class="bg">
+
+      <div class="main">
+         
+          <ul>
+             <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="tutorial.html">Tutorials</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+      </div><br><br><br><br><br><br>
+
+
+<h1><center>HTML <span class="color_h1">&lt;th&gt;</span> Tag</h1></center>
+
+<div class='test'>
+  <div style='float: left;'>
+   <a href="frame.html"> <button style="width:100px;height:50px;">Previous</button></a>
+  </div>
+  <div style='float: right;'>
+    <a href="tr.html"><button style="width:100px;height:50px;">Next</button></a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="example">
+
+<h3>Example</h3>
+<p>A simple HTML table with two header cells and two data cells:</p>
+<div class="code">
+&lt;table&gt;<br>
+&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;th&gt;Month&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;th&gt;Savings&lt;/th&gt;<br>
+&nbsp;&lt;/tr&gt;<br>
+&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;td&gt;January&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;td&gt;$100&lt;/td&gt;<br>
+&nbsp;&lt;/tr&gt;<br>
+&lt;/table&gt;
+</div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<p>More "Try it Yourself" examples below.</p>
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The &lt;th&gt; tag defines a header cell in an HTML table.</p>
+<p>An HTML table has two kinds of cells:</p>
+<ul>
+  <li>Header cells - contains header information (created with the
+ &lt;th&gt; element)</li>
+  <li>Standard cells - contains data (created with the <a href="tag_td.asp">&lt;td&gt;</a> element)</li>
+</ul>
+<p>The text in &lt;th&gt; elements are bold and centered by default.</p>
+<p>The text in &lt;td&gt; elements are regular and left-aligned by default.</p>
+<hr>
+
+
+
+<h2>Attributes</h2>
+<table class="table-all notranslate"> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th style="width:60%">Description</th>
+  </tr>
+  <tr>
+    <td>abbr</td>
+    <td><i>text</i></td>
+    <td>Specifies an abbreviated version of the content in a header cell</td>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>left<br>
+      right<br>
+      center<br>
+      justify<br>
+      char</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+    Aligns the content in a header cell</td>
+  </tr>
+  <tr>
+    <td>axis</td>
+    <td><i>category_name</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br> Categorizes header cells</td>
+  </tr>
+  <tr>
+    <td>bgcolor</td>
+    <td><i>rgb(x,x,x)<br>
+    #xxxxxx<br>
+    colorname</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies the background color of a header cell</td>
+  </tr>
+  <tr>
+    <td>char</td>
+    <td><i>character</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br> Aligns the content in a header cell to a character</td>
+  </tr>
+  <tr>
+    <td>charoff</td>
+    <td><i>number</i>&nbsp;</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br> Sets the number of characters the content will be aligned from the character specified by the char attribute</td>
+  </tr>
+  <tr>
+    <td>colspan</td>
+    <td><i>number</i></td>
+    <td>Specifies the number of columns a header cell should span</td>
+  </tr>
+  <tr>
+    <td>headers</td>
+    <td><i>header_id</i></td>
+    <td>Specifies one or more header cells a cell is related to</td>
+  </tr>
+  <tr>
+    <td>height</td>
+    <td><i>pixels<br>
+ %</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Sets the height of a header cell</td>
+  </tr>
+    <tr>
+    <td>nowrap</td>
+    <td>nowrap</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies that the content inside a header cell should not wrap</td>
+    </tr>
+  <tr>
+    <td>rowspan</td>
+    <td><i>number</i></td>
+    <td>Specifies the number of rows a header cell should span</td>
+  </tr>
+  <tr>
+    <td>scope</td>
+    <td>col<br>
+      colgroup<br>
+      row<br>
+      rowgroup</td>
+    <td>Specifies whether a header cell is a header for a column, row, or group of columns or rows </td>
+  </tr>
+  <tr>
+    <td>sorted</td>
+    <td>reversed<br><em>number</em><br>reversed <em>number</em><br><em>number</em> reversed</td>
+    <td>Defines the sort direction of a column</td>
+  </tr>
+    <tr>
+    <td>valign</td>
+    <td>top<br>
+      middle<br>
+      bottom<br>
+      baseline</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br> Vertical aligns the 
+content in a header cell</td>
+    </tr>
+    <tr>
+    <td>width</td>
+    <td><i>pixels<br>
+    %</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies the width of a header cell</td>
+    </tr>
+</table>
+   </body>
+</html>

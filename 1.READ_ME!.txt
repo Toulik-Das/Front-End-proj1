@@ -1,0 +1,17 @@
+                                              WT Project
+
+(1)open  "index.html"   for main web page.
+
+(2)open "iframe.html" and "frame.html" for iframe and frame web page.
+(3)open "tutorial.html" for full table with all of the html tages.
+
+(4)Open "about.html" for about us page.
+
+
+#Name:Toulik Das
+#Roll no:1729231
+#Sec. :CSCE3
+#Group:(226-236)group 6(iframe & frame).
+             
+
+                                       

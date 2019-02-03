@@ -1,0 +1,103 @@
+<html>
+    <head>
+          <title>html tag</title>
+  <style>
+ .btn, .btn:link, .btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}   
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}          
+.test {
+  width:60%;
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+}
+.bg{
+         background-image:url("y.jpg");
+          height:100vh;
+          background-size:cover;
+          background-position:center;
+         }
+
+ *{
+            margin:0;
+            
+            font-family:Century Gothic;
+           }
+
+       ul{
+          float:right;
+          list-style-type:none;
+          margin-top:25px
+          }
+
+      ul li{
+          display:inline-block;
+           }
+       ul li a{
+           text-decoration:none;
+           color:#f44242;
+           padding:5px 20px;
+           border 1px solid #fff;
+           transition:0.6s ease;
+
+            }
+ul li a:hover{
+            background-color:#fff;
+            color:#000;
+            }
+       
+       
+
+  </style>
+    </head>
+  <body class="bg">
+
+      <div class="main">
+         
+          <ul>
+             <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="tutorial.html">Tutorials</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+      </div><br><br><br><br><br><br>
+
+
+<h1><center>HTML <span class="color_h1">&lt;main&gt;</span> Tag</h1></center>
+
+<div class='test'>
+  <div style='float: left;'>
+   <a href="pre.html"> <button style="width:100px;height:50px;">Previous</button></a>
+  </div>
+  <div style='float: right;'>
+    <a href="h.html"><button style="width:100px;height:50px;">Next</button></a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="example">
+<h3>Example</h3>
+<div class="code notranslate htmlHigh">
+    &lt;main&gt;<br>&nbsp; &lt;h1&gt;Web Browsers&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&lt;/p&gt;<br><br>&nbsp; &lt;article&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h1&gt;Google Chrome&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Google Chrome is a free, open-source web browser developed by Google,<br>&nbsp;&nbsp;&nbsp; released in 2008.&lt;/p&gt;<br>&nbsp; &lt;/article&gt;<br><br>&nbsp; &lt;article&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h1&gt;Internet Explorer&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Internet Explorer is a free web browser from Microsoft, released in 1995.&lt;/p&gt;<br>&nbsp; &lt;/article&gt;<br>
+ <br>&nbsp; &lt;article&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h1&gt;Mozilla Firefox&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Firefox is a free, open-source web browser from Mozilla, released in 2004.&lt;/p&gt;<br>&nbsp; &lt;/article&gt;<br>&lt;/main&gt; </div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The &lt;main&gt; tag specifies the main content of a document.</p>
+<p>The content inside the &lt;main&gt; element should be unique to the document. 
+It should not contain any content that is repeated across documents such as 
+sidebars, navigation links, copyright information, site logos, and search forms.</p>
+<p><strong>Note:</strong> There must not be more than one &lt;main&gt; element in a 
+document. The &lt;main&gt; element must NOT be a descendant of an &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, 
+&lt;header&gt;, or &lt;nav&gt; element.</p>
+<hr>
+
+   </body>
+</html>

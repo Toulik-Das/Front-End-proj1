@@ -1,0 +1,159 @@
+<html>
+    <head>
+          <title>html tag</title>
+  <style>
+
+.test {
+  width:60%;
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+}
+.bg{
+         background-image:url("y.jpg");
+          height:100vh;
+          background-size:cover;
+          background-position:center;
+         }
+
+ *{
+            margin:0;
+            
+            font-family:Century Gothic;
+           }
+
+       ul{
+          float:right;
+          list-style-type:none;
+          margin-top:25px
+          }
+
+      ul li{
+          display:inline-block;
+           }
+       ul li a{
+           text-decoration:none;
+           color:#f44242;
+           padding:5px 20px;
+           border 1px solid #fff;
+           transition:0.6s ease;
+
+            }
+ul li a:hover{
+            background-color:#fff;
+            color:#000;
+            }
+.btn, .btn:link, .btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}   
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}                 
+       
+
+  </style>
+    </head>
+  <body class="bg">
+
+      <div class="main">
+         
+          <ul>
+             <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="tutorial.html">Tutorials</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+      </div><br><br><br><br><br><br>
+
+
+<h1><center>HTML <span class="color_h1">&lt;ol&gt;</span> Tag</h1></center>
+
+<div class='test'>
+  <div style='float: left;'>
+   <a href="ul.html"> <button style="width:100px;height:50px;">Previous</button></a>
+  </div>
+  <div style='float: right;'>
+    <a href="table.html"><button style="width:100px;height:50px;">Next</button></a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="example">
+<h3>Example</h3>
+<p>2 different ordered lists:</p>
+<div class="code ">
+    &lt;ol&gt;<br>
+ &nbsp;
+ &lt;li&gt;Coffee&lt;/li&gt;<br>
+ &nbsp;
+ &lt;li&gt;Tea&lt;/li&gt;<br>
+ &nbsp;
+ &lt;li&gt;Milk&lt;/li&gt;<br>
+ &lt;/ol&gt;<br>
+ <br>
+ &lt;ol start=&quot;50&quot;&gt;<br>
+ &nbsp;
+ &lt;li&gt;Coffee&lt;/li&gt;<br>
+ &nbsp;
+ &lt;li&gt;Tea&lt;/li&gt;<br>
+ &nbsp;
+ &lt;li&gt;Milk&lt;/li&gt;<br>
+ &lt;/ol&gt;</div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+<p>Use the <a href="tag_li.asp">&lt;li&gt;</a> tag to define list items.</p>
+<hr>
+
+<h2>Attributes</h2>
+
+<table class="table-all notranslate"> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>compact</td>
+    <td>compact</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies that the list should render smaller than normal</td>
+  </tr>
+  <tr>
+    <td >reversed</td>
+    <td>reversed</td>
+    <td>Specifies that the list order should be descending (9,8,7...)</td>
+  </tr>
+  <tr>
+    <td>start</td>
+    <td><i>number</i></td>
+    <td>Specifies the start value of an ordered list</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>1<br>
+ A<br>
+    a<br>
+    I<br>
+    i</td>
+    <td>Specifies the kind of marker to use in the list</td>
+  </tr>
+  </table>
+<hr>
+
+<h2>Default CSS Settings</h2>
+<p>Most browsers will display the &lt;ol&gt; element with the following default values:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="code ">
+    ol {<br>&nbsp;&nbsp;&nbsp; display: block;<br>&nbsp;&nbsp;&nbsp; list-style-type: decimal;<br>&nbsp;&nbsp;&nbsp; margin-top: 1em;<br>&nbsp;&nbsp;&nbsp; margin-bottom: 1em;<br>&nbsp;&nbsp;&nbsp; margin-left: 0;<br>&nbsp;&nbsp;&nbsp; margin-right: 0;<br>&nbsp;&nbsp;&nbsp; padding-left: 40px;<br>} </div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+   </body>
+</html>

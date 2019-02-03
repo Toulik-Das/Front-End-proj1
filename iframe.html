@@ -1,0 +1,187 @@
+<html>
+    <head>
+          <title>html tag</title>
+  <style>
+
+.test {
+  width:60%;
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+}
+.bg{
+         background-image:url("y.jpg");
+          height:100vh;
+          background-size:cover;
+          background-position:center;
+         }
+.btn, .btn:link, .btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}   
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}          
+      
+
+ *{
+            margin:0;
+            
+            font-family:Century Gothic;
+           }
+
+       ul{
+          float:right;
+          list-style-type:none;
+          margin-top:25px
+          }
+
+      ul li{
+          display:inline-block;
+           }
+       ul li a{
+           text-decoration:none;
+           color:#f44242;
+           padding:5px 20px;
+           border 1px solid #fff;
+           transition:0.6s ease;
+
+            }
+ul li a:hover{
+            background-color:#fff;
+            color:#000;
+            }
+       
+       
+
+  </style>
+    </head>
+  <body class="bg">
+
+      <div class="main">
+         
+          <ul>
+             <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="tutorial.html">Tutorials</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+      </div><br><br><br><br><br><br>
+
+
+<h1><center>HTML <span class="color_h1">&lt;iframe&gt;</span> Tag</h1></center>
+
+
+
+<br><br>
+<div class="example">
+<h3>Example</h3>
+<p>An inline frame is marked up as follows:</p>
+<div class="code">
+    <pre >
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Iframes&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Document content goes here...&lt;/p&gt;
+      
+      &lt;iframe src = "/html/menu.htm" width = "555" height = "200"&gt;
+         Sorry your browser does not support inline frames.
+      &lt;/iframe&gt;
+      
+      &lt;p&gt;Document content also go here...&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="iframeop.html" class="btn margin-bottom">Output &raquo;</a>
+</div>
+<hr>
+
+<h2>Attributes</h2>
+
+<table class="table-all notranslate"> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th style="width:60%">Description</th>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>left<br>
+    right<br>
+    top<br>
+    middle<br>
+    bottom</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+    Specifies the alignment of an  &lt;iframe&gt; according to surrounding elements</td>
+  </tr>
+  <tr>
+    <td>frameborder</td>
+    <td>1<br>
+      0</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies whether or not to display a border around an &lt;iframe&gt;</td>
+    </tr>
+    <tr>
+    <td>height</td>
+    <td><i>pixels</i></td>
+    <td>Specifies the height of an &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+    <td>longdesc</td>
+    <td><i>URL</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies a page that contains a long description of the content of an &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+    <td>marginheight</td>
+    <td><i>pixels</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies the top and bottom margins of the content of an &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+    <td>marginwidth</td>
+    <td><i>pixels</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies the left and right margins of the content of an &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+    <td>name</td>
+    <td><i>text</i></td>
+    <td>Specifies the name of an &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+    <td class="html5badge">sandbox</td>
+    <td>allow-forms<br>allow-pointer-lock<br>allow-popups<br>
+      allow-same-origin<br>
+      allow-scripts<br>
+      allow-top-navigation</td>
+    <td>Enables an extra set of restrictions for the content in an &lt;iframe&gt;</td>
+    </tr>
+      <tr>
+    <td>scrolling</td>
+    <td>yes<br>
+      no<br>
+      auto</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies whether or not to display scrollbars in an &lt;iframe&gt;</td>
+    </tr>
+  <tr>
+    <td>src</td>
+    <td><i>URL</i></td>
+    <td>Specifies the address of the document to embed in the &lt;iframe&gt;</td>
+  </tr>
+  <tr>
+    <td class="html5badge"><a href="att_iframe_srcdoc.asp">srcdoc</a></td>
+    <td><i>HTML_code</i></td>
+    <td>Specifies the HTML content of the page to show in the &lt;iframe&gt;</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td><i>pixels</i></td>
+    <td>Specifies the width of an &lt;iframe&gt;</td>
+  </tr>
+  </table>
+   </body>
+</html>

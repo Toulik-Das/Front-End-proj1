@@ -1,0 +1,213 @@
+<html>
+    <head>
+          <title>html tag</title>
+  <style>
+
+.test {
+  width:60%;
+  display:inline;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+}
+.bg{
+         background-image:url("y.jpg");
+          height:100vh;
+          background-size:cover;
+          background-position:center;
+         }
+
+ *{
+            margin:0;
+            
+            font-family:Century Gothic;
+           }
+
+       ul{
+          float:right;
+          list-style-type:none;
+          margin-top:25px
+          }
+
+      ul li{
+          display:inline-block;
+           }
+       ul li a{
+           text-decoration:none;
+           color:#f44242;
+           padding:5px 20px;
+           border 1px solid #fff;
+           transition:0.6s ease;
+
+            }
+ul li a:hover{
+            background-color:#fff;
+            color:#000;
+            }
+       
+    .btn, .btn:link, .btn:visited {color:#FFFFFF;background-color:#4CAF50}
+a.btn[href*="exercise.asp"] {margin:10px 5px 0 0}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}   
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}              
+
+  </style>
+    </head>
+  <body class="bg">
+
+      <div class="main">
+         
+          <ul>
+             <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="tutorial.html">Tutorials</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+      </div><br><br><br><br><br><br>
+
+
+<h1><center>HTML <span class="color_h1">&lt;table&gt;</span> Tag</h1></center>
+
+<div class='test'>
+  <div style='float: left;'>
+   <a href="ol.html"> <button style="width:100px;height:50px;">Previous</button></a>
+  </div>
+  <div style='float: right;'>
+    <a href="tbody.html"><button style="width:100px;height:50px;">Next</button></a>
+  </div>
+</div>
+
+<br><br>
+<div class="example">
+<h3>Example</h3>
+<p>A simple HTML table, containing two columns and two rows:</p>
+<div class="code ">
+    &lt;table&gt;<br>
+      &nbsp;
+      &lt;tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;th&gt;Month&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;th&gt;Savings&lt;/th&gt;<br>
+      &nbsp;
+      &lt;/tr&gt;<br>
+      &nbsp;
+      &lt;tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;td&gt;January&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;td&gt;$100&lt;/td&gt;<br>
+      &nbsp;
+      &lt;/tr&gt;<br>
+      &lt;/table&gt;
+</div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The &lt;table&gt; tag defines an HTML table.</p>
+<p>An HTML table consists of the &lt;table&gt; element and one or more&lt;tr&gt;, 
+&lt;th&gt;, and&lt;td&gt; elements.</p>
+<p>The &lt;tr&gt; element defines a table row, the &lt;th&gt; element defines a table header, and the 
+&lt;td&gt; element defines a table cell.</p>
+<p>A more complex HTML table may also include &lt;caption&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;thead&gt;, 
+&lt;tfoot&gt;, and &lt;tbody&gt; elements. </p>
+<div class="panel note">
+  <p><strong>Note:</strong> Tables should not be used for page layout! 
+  Historically, some Web authors have misused tables in HTML as a way to control 
+  their page layout. However, there are a variety of alternatives to using HTML 
+  tables for layout, primarily using CSS.</p>
+</div>
+<hr>
+
+<h2>Attributes</h2>
+<table class="table-all "> 
+  <tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>left<br>
+    center<br>
+    right</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies the alignment of a table according to surrounding text</td>
+  </tr>
+  <tr>
+    <td>bgcolor</td>
+    <td><i>rgb(x,x,x)<br>
+    #xxxxxx<br>
+    colorname</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies the background color for a table</td>
+  </tr>
+  <tr>
+    <td>border</td>
+    <td>1<br>0</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>
+ Specifies whether or not the table is being used for layout purposes</td>
+  </tr>
+  <tr>
+    <td>cellpadding</td>
+    <td><i>pixels</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies the space between the cell wall and the cell content</td>
+  </tr>
+  <tr>
+    <td>cellspacing</td>
+    <td><i>pixels</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies the space between cells</td>
+  </tr>
+    <tr>
+    <td>frame</td>
+    <td>void<br>
+      above<br>
+      below<br>
+      hsides<br>
+      lhs<br>
+      rhs<br>
+      vsides<br>
+      box<br>
+      border</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies which parts of the outside borders that should be visible</td>
+      </tr>
+      <tr>
+    <td>rules</td>
+    <td>none<br>
+      groups<br>
+      rows<br>
+      cols<br>
+      all</td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies which parts of the inside borders that should be visible</td>
+      </tr>
+      <tr>
+    <td>summary</td>
+    <td><i>text</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies a summary of the content of a table</td>
+      </tr>
+  <tr>
+    <td>width</td>
+    <td><i>pixels<br>
+      %</i></td>
+    <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies the width of a table</td>
+  </tr>
+  </table>
+
+<hr>
+
+<h2>Default CSS Settings</h2>
+<p>Most browsers will display the &lt;table&gt; element with the following default values:</p>
+<div class="example">
+<h3>Example</h3>
+<div class="code notranslate cssHigh">
+    table {<br>&nbsp;&nbsp;&nbsp; display: table;<br>&nbsp;&nbsp;&nbsp; border-collapse: separate;<br>&nbsp;&nbsp;&nbsp; border-spacing: 2px;<br>&nbsp;&nbsp;&nbsp; border-color: gray;<br>} </div>
+<a target="_blank" href="https://www.onlinegdb.com/online_html_compiler" class="btn margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+
+   </body>
+</html>
